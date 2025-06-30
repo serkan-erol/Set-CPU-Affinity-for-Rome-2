@@ -27,3 +27,5 @@ How to use:
 Where is the .exe:
     You can find it in: Set-CPU-Affinity-for-Rome-2/bin/Release/net9.0/win-x64/publish
     It is self contained, meaning you do not have to download .NET Runtime to make it work. Everything is included. That is why the .exe of such a simple program takes ~70 MBs.
+
+Enjoy!
