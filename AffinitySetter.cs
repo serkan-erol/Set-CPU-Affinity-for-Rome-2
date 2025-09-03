@@ -38,18 +38,18 @@ static int CalculateAffinityMask()
     }
     else if (processorCount is >= 3 and <= 5)
     {
-        // -1 would make it enable all the cores, and you are here for a reason!
-        return (1 << processorCount) - 2; 
-        /* So, -2 excludes the first core. Lowering the total core count
+        // Without -1 it would enable all the cores, and you are here for a reason!
+        return (1 << processorCount) - 1; 
+        /* So, -1 excludes the first core. Lowering the total core count
          in hopes of helping with the loading screen problems.
-         Since you have a few cores already, we do not want to disable most/many of them.
+         Since you only have a few cores, we do not want to disable most/many of them.
          Although I doubt anyone with less than 8 cores will encounter this problem, it does
          not hurt to add a couple of more lines to help someone, in case I'm wrong */
     }
     else if (processorCount <= 8)
     {
-        return (1 << processorCount) - 4;
-        /* So, -4 excludes the first 2 cores. Lowering the total core count
+        return (1 << processorCount) - 3;
+        /* So, -3 excludes the first 2 cores. Lowering the total core count
          in hopes of helping with the loading screen problems */
     }
     
