@@ -1,2 +1,0 @@
-D:\Personal_Projects\Rider_Projects\SetProcessAffinity\bin\Release\net9.0\win-x64\publish\SetProcessAffinity.pdb
-D:\Personal_Projects\Rider_Projects\SetProcessAffinity\bin\Release\net9.0\win-x64\publish\SetProcessAffinity.exe

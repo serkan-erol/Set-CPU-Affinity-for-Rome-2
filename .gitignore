@@ -1,0 +1,9 @@
+# Build outputs
+bin/Debug/
+obj/
+
+# Rider / JetBrains IDEs
+.idea/
+
+# User Specific Files
+.user

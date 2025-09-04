@@ -39,7 +39,7 @@ static int CalculateAffinityMask()
     else if (processorCount is >= 3 and <= 5)
     {
         // Without -1 it would enable all the cores, and you are here for a reason!
-        return (1 << processorCount) - 1; 
+        return (1 << processorCount) - 1; // (111, 1111 or 11111) - 1 = 110, 1110, 11110
         /* So, -1 excludes the first core. Lowering the total core count
          in hopes of helping with the loading screen problems.
          Since you only have a few cores, we do not want to disable most/many of them.
